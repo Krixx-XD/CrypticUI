@@ -6,6 +6,9 @@
 	shlex | Designing + Programming
 	iRay  | Programming
 	Max   | Programming
+   ------------------------------------------
+    I am not related to sirius team. i just did some tweaks 
+    and some revamps
 
 ]]
 
@@ -1166,6 +1169,9 @@ local function Hide(notify: boolean?)
 		MPrompt.Size = UDim2.new(0, 40, 0, 10)
 		MPrompt.BackgroundTransparency = 1
 		MPrompt.Title.TextTransparency = 1
+		if MPrompt:FindFirstChild("Title") then
+		    MPrompt.Title.Text = "Show Cryptic"
+		end
 		MPrompt.Visible = true
 	end
 
@@ -1174,7 +1180,7 @@ local function Hide(notify: boolean?)
 	Debounce = true
 	if notify then
 		if useMobilePrompt then 
-			RayfieldLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping 'Show Rayfield'.", Duration = 7, Image = 4400697855})
+			RayfieldLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping 'Show Cryptic'.", Duration = 7, Image = 4400697855})
 		else
 			RayfieldLibrary:Notify({Title = "Interface Hidden", Content = `The interface has been hidden, you can unhide the interface by tapping {getSetting("General", "rayfieldOpen")}.`, Duration = 7, Image = 4400697855})
 		end
