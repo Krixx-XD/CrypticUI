@@ -1,8 +1,5 @@
 --[[
 
-	Rayfield Interface Suite
-	by Sirius
-
 	shlex | Designing + Programming
 	iRay  | Programming
 	Max   | Programming
@@ -10,7 +7,13 @@
     I am not related to sirius team. i just did some tweaks 
     and some revamps
 
+    Cryptic UI
+    by Rage
+
+    
 ]]
+
+print("loaded")
 
 if debugX then
 	warn('Initialising Rayfield')
